@@ -6,6 +6,10 @@ class Character {
         this._classes = [];
     }
 
+    get level() {
+        
+    }
+
     addClass(characterClass) {
         this._classes.push(characterClass);
     }
