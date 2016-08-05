@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/akhellas/dnd5e.core/issues"
   },
-  "homepage": "https://github.com/akhellas/dnd5e.core#readme"
+  "homepage": "https://github.com/akhellas/dnd5e.core#readme",
+  "jspm": {
+    "dependencies": {},
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }
