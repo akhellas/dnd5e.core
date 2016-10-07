@@ -3,7 +3,7 @@ import * as races from "./models/phb/races";
 
 function generate(name: string) {
     let character = new Character();
-    character.race = new races.Race();
+    character.race = new races.Race("");
 
     console.log(character);
 

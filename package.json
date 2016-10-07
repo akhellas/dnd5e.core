@@ -1,0 +1,24 @@
+{
+  "name": "dnd5e.core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhellas/dnd5e.core.git"
+  },
+  "author": "ak.hellas@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akhellas/dnd5e.core/issues"
+  },
+  "homepage": "https://github.com/akhellas/dnd5e.core#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.0.2",
+    "typescript": "^2.0.3"
+  }
+}
