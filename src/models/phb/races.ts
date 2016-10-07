@@ -5,3 +5,7 @@ export class Race {
         this.name = name;
     }
 }
+
+export class Dwarf extends Race {
+    
+}
