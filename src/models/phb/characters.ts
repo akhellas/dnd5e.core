@@ -12,13 +12,7 @@ export interface ICharacter {
     alignment: string;
     experiencePoints: number;
 
-    //ability scores
-    strength: IAbilityScore;
-    dexterity: IAbilityScore;
-    constitution: IAbilityScore;
-    intelligence: IAbilityScore;
-    wisdom: IAbilityScore;
-    charisma: IAbilityScore;
+
 
     //skills
     acrobatics: ISkill;
