@@ -1,20 +1,19 @@
 export class Class {
-    name: string;
     level: number;
 
-    constructor(name?: string) {
+    constructor() {
         this.level = 1;
     }
 }
 
 export class Barbarian extends Class {
     constructor() {
-        super("Barbarian");
+        super();
     }
 }
 
 export class Fighter extends Class {
     constructor() {
-        super("Fighter");
+        super();
     }
 }

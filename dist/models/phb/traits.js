@@ -1,7 +1,9 @@
 "use strict";
-var Trait = (function () {
-    function Trait() {
+var ProficiencyTrait = (function () {
+    function ProficiencyTrait(weapons) {
+        if (weapons === void 0) { weapons = []; }
+        this.weapons = weapons;
     }
-    return Trait;
+    return ProficiencyTrait;
 }());
-exports.Trait = Trait;
+exports.ProficiencyTrait = ProficiencyTrait;

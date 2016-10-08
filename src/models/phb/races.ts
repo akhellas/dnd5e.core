@@ -1,24 +1,51 @@
 import { Character } from "./characters";
 import * as enumerations from "./enumerations";
-import { Trait } from "./traits";
+import { Trait, ProficiencyTrait } from "./traits";
 
 export class Race {
-    name: string;
     traits: Array<Trait>;
 
-    constructor(name?: string) {
-        this.name = name;
+    constructor() {
         this.traits = [];
+    }
+
+    apply(character: Character) {
+        character.size = enumerations.CreatureSize.Medium;
     }
 }
 
 export class Dwarf extends Race {
-    constructor(name: string = "Dwarf") {
-        super(name);
+    constructor() {
+        super();
+
+        let dpt = new ProficiencyTrait(["battleaxe, handaxe, throwing hammer, warhammer"]);
+
+        this.traits.push(dpt);
+    }
+    
+    apply(character: Character) {
+        super.apply(character);
+
+        character.speed = 25;
+    }
+}
+
+export class HillDwarf extends Dwarf {
+    constructor() {
+        super();
     }
 
-    static apply(character: Character) {
-        character.size = enumerations.CreatureSize.Medium;
-        character.speed = 25;
+    apply(character: Character) {
+        super.apply(character);
+    }
+}
+
+export class MountainDwarf extends Dwarf {
+    constructor() {
+        super();
+    }
+    
+    apply(character: Character) {
+        super.apply(character);
     }
 }

@@ -29,7 +29,10 @@ export class Character {
     constructor(name: string = "", race: Race = new Dwarf, characterClass: Class = new Fighter) {
         this.name = name;
         this.race = race;
+        
         this.classes = [characterClass];
+
+        race.apply(this);
     }
 
     get level() {
@@ -39,9 +42,10 @@ export class Character {
     }
 
     print() {
-        console.log("\nDnD 5E Character Sheet");
+        console.log("\nDnD 5E Character Sheet\n");
         console.log(`Name: ${this.name} ${this.surname}`)
         console.log(this);
+        console.log(this.race.traits);
         console.log("\n");
     }
 }

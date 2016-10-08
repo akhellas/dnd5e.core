@@ -9,6 +9,7 @@ var Character = (function () {
         this.name = name;
         this.race = race;
         this.classes = [characterClass];
+        race.apply(this);
     }
     Object.defineProperty(Character.prototype, "level", {
         get: function () {
@@ -20,9 +21,10 @@ var Character = (function () {
         configurable: true
     });
     Character.prototype.print = function () {
-        console.log("\nDnD 5E Character Sheet");
+        console.log("\nDnD 5E Character Sheet\n");
         console.log("Name: " + this.name + " " + this.surname);
         console.log(this);
+        console.log(this.race.traits);
         console.log("\n");
     };
     return Character;
