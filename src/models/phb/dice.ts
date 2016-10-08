@@ -1,4 +1,8 @@
-import { RollPolicy } from "./enumerations";
+export enum RollPolicy {
+    Max,
+    Min,
+    Sum
+}
 
 export class Die {
     name: string;

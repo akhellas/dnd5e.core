@@ -1,8 +1,4 @@
-export enum RollPolicy {
-    Max,
-    Min,
-    Sum
-}
+
 
 export enum Alignment {
     LG,
@@ -22,3 +18,4 @@ export enum CreatureSize {
     Big,
     Huge
 }
+
