@@ -1,8 +1,6 @@
 {
-    "files": [
-        "src/main.ts",
-        "src/models/phb/races.ts",
-        "src/models/phb/characters.ts"
+    "include":[
+        "src/**/*"
     ],
     "compilerOptions": {
         "noImplicitAny": true,
