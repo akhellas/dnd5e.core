@@ -1,6 +1,6 @@
 import { ICreature } from "../base/creature";
 import { IAbilityScore, AbilityScoreType } from "../base/abilityScore";
-import { SkillType } from "../phb/skills";
+import { SkillType } from "../base/skill";
 
 export interface ICompatant {
     isPlayer: boolean;
@@ -14,22 +14,22 @@ export interface ICompatant {
     // skillCheck(skill: SkillType, difficultyCheck: number): boolean;
 }
 
-export class GenericCompatant implements ICreature, ICompatant {
+// export class GenericCompatant implements ICreature, ICompatant {
 
-    // ICreature
-    name: string;
-    strength: IAbilityScore;
-    dexterity: IAbilityScore;
-    constitution: IAbilityScore;
-    intelligence: IAbilityScore;
-    wisdom: IAbilityScore;
-    charisma: IAbilityScore;
+//     // ICreature
+//     name: string;
+//     strength: IAbilityScore;
+//     dexterity: IAbilityScore;
+//     constitution: IAbilityScore;
+//     intelligence: IAbilityScore;
+//     wisdom: IAbilityScore;
+//     charisma: IAbilityScore;
 
-    isPlayer: boolean;
-    isSpecial: boolean;
-    initiative: number;
+//     isPlayer: boolean;
+//     isSpecial: boolean;
+//     initiative: number;
 
-    rollInitiative(): number {
-        return 1;
-    }
-}
+//     rollInitiative(): number {
+//         return 1;
+//     }
+// }

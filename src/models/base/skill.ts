@@ -1,4 +1,4 @@
-import { AbilityScoreType } from "./abilityScores";
+import { AbilityScoreType } from "./abilityScore";
 
 export enum SkillType {
     Acrobatics,
