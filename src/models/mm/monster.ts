@@ -1,46 +1,14 @@
-import { IAbilityScore } from "./abilityScore";
-import { ISkill } from "./skill";
-import { IHitPoints } from "./hitPoints";
+import { ICreature, CreatureType, CreatureSize } from "../base/creature";
+import { IAbilityScore } from "../base/abilityScore";
+import { ISkill } from "../base/skill";
+import { IHitPoints } from "../base/hitPoints";
+import { ICombatant } from "../combat/combatant";
 
-export enum CreatureSize {
-    Tiny,
-    Smalll,
-    Medium,
-    Large,
-    Huge,
-    Gargantuan
+export interface IMonster extends ICreature {
+
 }
 
-export enum CreatureType {
-    Aberration,
-    Beast,
-    Celestial,
-    Construct,
-    Dragon,
-    Elemental,
-    Fey,
-    Fiend,
-    Giant,
-    Humanoid,
-    Monstrosity,
-    Ooze,
-    Plant,
-    Undead
-}
-
-export enum Alignment {
-    LG,
-    NG,
-    CG,
-    LN,
-    N,
-    CN,
-    LE,
-    NE,
-    CE
-}
-
-export interface ICreature {
+export class Monster implements IMonster {
     name: string;
     type: CreatureType;
     tags: Array<string>;
@@ -85,4 +53,8 @@ export interface ICreature {
 
     armorClass: number;
     initiative: number;
+
+    constructor() {
+        this.tags = [];
+    }
 }

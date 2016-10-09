@@ -2,7 +2,7 @@ import { ICreature } from "../base/creature";
 import { IAbilityScore, AbilityScoreType } from "../base/abilityScore";
 import { SkillType } from "../base/skill";
 
-export interface ICompatant {
+export interface ICombatant {
     isPlayer: boolean;
     isSpecial: boolean;
     initiative: number;
