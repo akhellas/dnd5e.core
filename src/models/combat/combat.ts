@@ -1,12 +1,10 @@
-import { AbilityScoreType } from "../phb/abilityScores";
-import { ICompatant } from "./compatant";
+import { AbilityScoreType } from "../base/abilityScore";
+import { ICombatant } from "./combatant";
 import { Round } from "./round";
 
 
-
-
 export class Combat {
-    compatants: Array<ICompatant>;
+    compatants: Array<ICombatant>;
     rounds: Array<Round>;
 
     constructor() {

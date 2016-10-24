@@ -24,7 +24,7 @@ export class AarakocraSimple {
     WIS: number = 12;
     CHA: number = 11;
 
-    perceptionSkill: number = 5;
+    perception: number = 5;
     passivePerception: number = 15;
     languages: Array<string> = ["Auran"];
     

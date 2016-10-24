@@ -9,7 +9,7 @@ export interface ICombatant {
 
     rollInitiative(): number;
 
-    // abilityCheck(abilityScore: AbilityScoreType): number;
+    abilityCheck(abilityScore: AbilityScoreType): number;
     // savingThrow(abilityScore: AbilityScoreType): boolean;
     // skillCheck(skill: SkillType, difficultyCheck: number): boolean;
 }
