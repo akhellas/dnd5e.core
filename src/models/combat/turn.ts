@@ -1,5 +1,5 @@
 import { Round } from "./round";
-import { ICompatant } from "./compatant";
+import { ICombatant } from "./combatant";
 
 export class Turn {
     round: Round;
@@ -8,7 +8,7 @@ export class Turn {
         this.round = round;
     }
 
-    get compatant() : ICompatant {
+    get compatant() : ICombatant {
         let index = this.round.combat.rounds.indexOf(this.round);
         return this.round.combat.compatants[index];
     }

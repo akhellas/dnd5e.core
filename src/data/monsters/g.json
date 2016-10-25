@@ -1,0 +1,21 @@
+{
+    "githyankiWarrior": {
+        "name": "Githyanki Warrior",
+        "size": "Medium",
+        "type": "Humanoid",
+        "tags": ["gith"],
+        "alignment": "LE",
+        "AC": 17,
+        "HP": 49,
+        "speed": { "walk": 30, "burrow": 0, "climb": 0, "fly": 0, "swim": 0 },
+        "abilityScores": { "STR": 15, "DEX": 14, "CON": 12, "INT": 13, "WIS": 13, "CHA": 10 },
+        "savingThrows": { "CON": 3, "INT": 3, "WIS": 3 },
+        "senses": {
+            "passivePerception": 11
+        },
+        "skills": {},
+        "languages": ["Gith"],
+        "CR": 3,
+        "XP": 700
+    }
+}

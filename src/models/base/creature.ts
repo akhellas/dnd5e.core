@@ -1,5 +1,5 @@
 import { IAbilityScore } from "./abilityScore";
-import { ISkill } from "./skill";
+import { ISkill, ISkills } from "./skill";
 import { IHitPoints } from "./hitPoints";
 
 export enum CreatureSize {
@@ -48,25 +48,27 @@ export interface ICreature {
     alignment: string;
     
     //ability scores
-    strength: IAbilityScore;
-    dexterity: IAbilityScore;
-    constitution: IAbilityScore;
-    intelligence: IAbilityScore;
-    wisdom: IAbilityScore;
-    charisma: IAbilityScore;
+    Strength: number;
+    Dexterity: number;
+    Constitution: number;
+    Intelligence: number;
+    Wisdom: number;
+    Charisma: number;
 
     //skills
-    acrobatics?: ISkill;
-    animalHandling?: ISkill;
-    arcana?: ISkill;
-    athletics?: ISkill;
-    deception?: ISkill;
-    history?: ISkill;
-    insight?: ISkill;
-    intimidation?: ISkill;
-    investigation?: ISkill;
-    medicine?: ISkill;
-    nature?: ISkill;
+    skills: ISkills;
+
+    acrobatics?: number;
+    animalHandling?: number;
+    arcana?: number;
+    athletics?: number;
+    deception?: number;
+    history?: number;
+    insight?: number;
+    intimidation?: number;
+    investigation?: number;
+    medicine?: number;
+    nature?: number;
     perception?: ISkill;
     performance?: ISkill;
     persuasion?: ISkill;
@@ -81,8 +83,9 @@ export interface ICreature {
     flySpeed?: number;
     swimSpeed?: number;
 
-    hitPoints: IHitPoints;
+    HP: IHitPoints;
 
-    armorClass: number;
+    AC: number;
+    initiativeModifier: number;
     initiative: number;
 }

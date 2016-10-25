@@ -1,3 +1,7 @@
-import { generate } from "./generator";
+//import { generate } from "./generator";
 
-generate();
+//generate();
+
+import { demoDamage } from "./models/combat/damage";
+
+demoDamage();

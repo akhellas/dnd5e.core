@@ -2,27 +2,17 @@ import { AbilityScoreType } from "../base/abilityScore";
 import { ICombatant } from "./combatant";
 import { Round } from "./round";
 
-
 export class Combat {
-    compatants: Array<ICombatant>;
+    combatants: Array<ICombatant>;
     rounds: Array<Round>;
 
     constructor() {
+        this.combatants = [];
         this.rounds = [];
-
     }
 
-    addRound() {
-        this.rounds.push(new Round(this));
-        
-    }
-
-    rollInitiative() {
-        for (let compatant of this.compatants) {
-            compatant.rollInitiative();
-        }
-
-        this.compatants.sort( (a, b) => {
+    sortByInitiative() {
+        this.combatants.sort( (a, b) => {
             let check = a.initiative - b.initiative;
 
             if (check == 0) {
@@ -32,9 +22,14 @@ export class Combat {
             return check;
         });
     }
-
-    start() {
-        this.rollInitiative();
-
+    
+    addCombatant(combatant: ICombatant ) {
+        combatant.rollInitiative();
+        this.combatants.push(combatant);
+        this.sortByInitiative();
     }
+}
+
+export function demoCombat() {
+    let combat = new Combat();
 }

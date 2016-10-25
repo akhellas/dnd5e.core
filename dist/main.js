@@ -1,3 +1,5 @@
+//import { generate } from "./generator";
 "use strict";
-var generator_1 = require("./generator");
-generator_1.generate();
+//generate();
+var damage_1 = require("./models/combat/damage");
+damage_1.demoDamage();
